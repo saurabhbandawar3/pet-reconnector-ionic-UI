@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle  end >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pet Reconnector</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="main">
+  <ion-card>
+    <img src="../assets/imgs/logo1.jpg" alt="Logo"/>
+  </ion-card>
+  <button ion-button full round (click)="gotoPage1()" class="btn-lost">
+    Lost a Pet
+  </button>
+  <button ion-button full round (click)="gotoPage2()" class="btn-found">
+    Found a Pet
+  </button>
+</ion-content>

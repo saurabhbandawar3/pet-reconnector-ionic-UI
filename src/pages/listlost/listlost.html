@@ -1,0 +1,25 @@
+<ion-header>
+        
+          <ion-navbar>
+            <ion-title>List of Lost Pets</ion-title>
+            <button ion-button menuToggle end>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+          </ion-navbar>
+        
+        </ion-header>
+        
+        
+        <ion-content padding>
+            <ion-scroll scrollY="true" style="height:50em">
+                <ion-item *ngFor="let p of pages">
+                    <ion-avatar item-start >
+                        <img src="../assets/imgs/{{p.img}}" alt="Lost">
+                    </ion-avatar>
+                    <p>{{p.pet}} | {{p.age}} | {{p.sex}} | {{p.size}}  </p>
+                    <p>{{p.desc}}</p>
+                    <a style="font-size:12px;"(click)=gotoLostDetails()>Read More ...</a>
+                </ion-item>
+            </ion-scroll>
+        </ion-content>
+        

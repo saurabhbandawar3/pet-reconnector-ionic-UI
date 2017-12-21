@@ -1,0 +1,17 @@
+page-about {
+    ion-content{
+
+    }
+    .scroll-content{
+        display: flex;
+        justify-content: center;
+
+    }
+    .para {
+        font-size: 20px;
+    }
+    ion-card.card{
+        height: 40em;
+        width: 22em;
+    }
+}

@@ -1,0 +1,91 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lost Pet Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="main">
+    <ion-item>
+        <ion-label >Type Of Animal</ion-label>
+        <ion-select [(ngModel)]="typeOf">  
+            <ion-option value="dog" selected>Dog</ion-option>
+            <ion-option value="cat">Cat</ion-option>
+            <ion-option value="horse">Horse</ion-option>
+            <ion-option value="other">Others</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+            <ion-label>Breed</ion-label>
+            <ion-select [(ngModel)]="breed">
+                <ion-option value="Pomerian" selected>Pomerian</ion-option>
+                <ion-option value="german_shepherd">german_shepherd</ion-option>
+                <ion-option value="buldog">Buldog</ion-option>
+            </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Age</ion-label>
+      <ion-select [(ngModel)]="age">  
+            <ion-option value="baby" selected>Baby</ion-option>
+            <ion-option value="young">Young</ion-option>
+            <ion-option value="Adult">Adult</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+            <ion-label >Sex</ion-label>
+            <ion-select [(ngModel)]="sex">  
+                    <ion-option value="baby" selected>Male</ion-option>
+                    <ion-option value="young">Female</ion-option>
+            </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Size</ion-label>
+      <ion-select [(ngModel)]="size">  
+          <ion-option value="small" selected>Small</ion-option>
+          <ion-option value="medium">Medium</ion-option>
+          <ion-option value="large">Large</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked><h2>Descirbe Your Pet</h2></ion-label>
+      <ion-textarea name="message" rows="2" cols="5"></ion-textarea>
+    </ion-item>
+
+    <ion-item >
+    <label style="color:#000">Image</label>
+    <button ion-button full color="light"> 
+        <ion-icon name="add" style="margin-right:0.5em"></ion-icon>
+         Add a Picture
+    </button> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label >Lost Address</ion-label>
+        <ion-input type = "text" [(ngModel)]="laddr" placeholder="City,State"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label >Contact <br> Information</ion-label>
+        <ion-input type = "number" [(ngModel)]="number" placeholder="(000)000-0000"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <button ion-button round padding color="primary" class="btn-submit" (click)="gotolostPage()">
+            Submit 
+        </button>
+        <button ion-button round padding color="primary" class="btn-Cancle" (click)="gotophomePage1()" >
+            Cancel 
+        </button>
+    </ion-item>
+
+</ion-content>

@@ -1,0 +1,24 @@
+page-home {
+    .scroll-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main{
+      //  background-color:   
+    }
+    // 
+    .btn-lost , .btn-found{
+        background-color: #0dbab1;
+    }
+    @media all and (min-width: 600px) {
+        ion-card.card{
+            height:30em;
+            width:30em;
+        }
+        .btn-lost , .btn-found{
+            background-color: #0dbab1;
+            width:32em;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>contact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p> You can Contact us by filling the following form  & we will try to get back to you as soon as we can.</p>
+  
+
+  <ion-item>
+    <ion-label>Full Name</ion-label>
+    <ion-input type="text" [(ngModel)]="name" placeholder=""></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Email Address</ion-label>
+    <ion-input type="text" [(ngModel)]="email" placeholder=""></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label stacked>Message</ion-label><br>
+    <ion-textarea name="message" rows="3" cols="5"></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+      <button ion-button round padding color="primary" class="btn-submit">
+          Submit
+      </button>
+      <button ion-button round padding color="primary" class="btn-Cancel">
+          Cancel
+      </button>
+  </ion-item>
+
+
+</ion-content>

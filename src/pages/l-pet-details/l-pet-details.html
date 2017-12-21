@@ -1,0 +1,60 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pet Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <button ion-button round padding color="primary" class="btn-pdf">
+            Export Pdf
+        </button>
+        <button ion-button round padding color="primary" class="btn-share">
+            Share
+        </button>
+        <button ion-button round padding color="primary" class="btn-Cancle">
+            Back
+        </button>
+    </ion-item>
+
+    <ion-item>
+        <ion-label >Animal</ion-label>
+        <ion-input type = "text" [(ngModel)]="animal" placeholder="Dog" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label >Breed</ion-label>
+        <ion-input type = "text" [(ngModel)]="breed" placeholder="German Sheperd" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Size</ion-label>
+        <ion-input type = "text" [(ngModel)]="size" placeholder="Large" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Sex</ion-label>
+        <ion-input type = "text" [(ngModel)]="sex" placeholder="Male" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Age</ion-label>
+        <ion-input type = "text" [(ngModel)]="age" placeholder="Age" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+        <ion-label >Description</ion-label>
+        <ion-textarea name="message" rows="3" cols="5" placeholder="Has a mark on Nose"></ion-textarea>
+      </ion-item>
+    <ion-item>
+
+        <ion-label>Contact Information</ion-label>
+        <ion-input type = "text" [(ngModel)]="contact" placeholder="(212)917-2121" ></ion-input> 
+    </ion-item>
+</ion-content>
